@@ -1,0 +1,179 @@
+/* General styles */
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    overflow-x: hidden;
+  }
+  body {
+    background-image: url("wallpaper.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+  }
+  header {
+    text-align: center;
+    background-color: #008080;
+    color: #fff;
+    padding: 20px 0;
+    animation: headerFadeIn 1s ease-in;
+  }
+  @keyframes headerFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  h1 {
+    font-size: 32px;
+    margin: 0;
+    color: #fff;
+    animation: headerTextBounce 2s ease-in-out infinite;
+  } 
+  @keyframes headerTextBounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  /* Task form styles */
+  .task-form {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin-bottom: 20px;
+    animation: formSlideIn 1s ease-in;
+  }
+  @keyframes formSlideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .task-form input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    animation: inputFadeIn 1s ease-in;
+  }
+  @keyframes inputFadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .task-form select {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  .task-form button {
+    padding: 10px;
+    background-color: #ff0066;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    animation: buttonPulse 1s ease-in-out infinite;
+  }
+  @keyframes buttonPulse {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
+  /* Task list styles */
+  #task-list {
+    width: 300px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    animation: listFadeIn 1s ease-in;
+  }
+  @keyframes listFadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  #task-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    animation: taskItemSlideIn 1s ease-in;
+  }
+  @keyframes taskItemSlideIn {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  .task-form input {
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  .task-form select {
+    padding: 10px 15px;
+    border-radius: 5px;
+  }
+  /* Task filters styles */
+.task-filters {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .task-filters label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .task-filters select {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  /* Task search styles */
+  .task-search {
+    display: flex;
+    margin-bottom: 10px;
+  }
+  .task-search label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  .task-search input {
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  
